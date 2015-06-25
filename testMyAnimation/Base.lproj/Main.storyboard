@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l2g-Ar-cRg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.94106847520000003" blue="0.5793845527" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="HtI-1X-VmF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87h-vt-deO">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="600"/>
+                                <color key="backgroundColor" red="0.65704131030000001" green="1" blue="0.56316239459999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2DL-nc-dMx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="187-9p-CjL">
+                                <rect key="frame" x="530" y="68" width="46" height="30"/>
+                                <state key="normal" title="Yellow">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="theSwitch1BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9U5-Iv-GKg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4H-uO-WGV">
+                                <rect key="frame" x="530" y="106" width="46" height="30"/>
+                                <state key="normal" title="Green">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="theSwitch2BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kek-Bd-neb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5TO-Kg-ppg">
+                                <rect key="frame" x="384" y="380" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="96J-Id-ctJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="yPr-Bo-vMB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="l2g-Ar-cRg" secondAttribute="trailing" constant="-16" id="GgE-Sw-R6W"/>
+                            <constraint firstItem="87h-vt-deO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="JSx-r4-4w4"/>
+                            <constraint firstItem="5TO-Kg-ppg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="KKP-LK-6gC"/>
+                            <constraint firstItem="87h-vt-deO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="KzB-wf-eyR"/>
+                            <constraint firstItem="l2g-Ar-cRg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Shw-Ie-h2O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K4H-uO-WGV" secondAttribute="trailing" constant="8" id="Sqv-Ng-J2h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5TO-Kg-ppg" secondAttribute="bottom" constant="20" id="bui-Ke-XWJ"/>
+                            <constraint firstItem="l2g-Ar-cRg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="dD3-sH-BSF"/>
+                            <constraint firstItem="K4H-uO-WGV" firstAttribute="top" secondItem="187-9p-CjL" secondAttribute="bottom" constant="8" id="dzA-kk-i7P"/>
+                            <constraint firstItem="187-9p-CjL" firstAttribute="leading" secondItem="K4H-uO-WGV" secondAttribute="leading" id="jH6-r9-IJP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="87h-vt-deO" secondAttribute="bottom" id="mOE-oo-HBK"/>
+                            <constraint firstItem="187-9p-CjL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="68" id="sUQ-nZ-std"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="theGreenView" destination="87h-vt-deO" id="hTi-TY-wMj"/>
+                        <outlet property="theImageView" destination="5TO-Kg-ppg" id="4Ke-le-grE"/>
+                        <outlet property="theYellowView" destination="l2g-Ar-cRg" id="xIF-yu-aZx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
